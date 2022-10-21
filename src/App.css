@@ -2,7 +2,7 @@
   width: 80%;
   text-align: center;
   display: flex;
-  margin: auto;
+  margin: 50px auto;
   align-items: center;
 }
 
@@ -10,6 +10,13 @@
   width: 25%;
   border: 1px solid white;
 }
+
+/*.item:hover {
+  transform: scale(110%);
+  transition: 1s ease-in-out;
+  align-self: center;
+  box-shadow: -10px 10px 21px -9px rgba(0, 0, 0, 0.75);
+}*/
 
 .item__550 {
   zoom: 110%;
