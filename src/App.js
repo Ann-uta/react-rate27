@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import rateData from './rateData';
+import CardFooter from './Components/CardFooter/CardFooter';
+import CardHeader from './Components/CardHeader/CardHeader';
+import Rate from './Components/Rate/Rate';
+import Speed from './Components/Speed/Speed';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App">         
+      {
+        rateData.map ((item) =>
+        <div className = {`item item__${item.rate}`} key = {item.rate}>        
+          <CardHeader rate = {item.rate}/>
+          <Rate rate = {item.rate}/>
+          <Speed speed = {item.speed}/>
+          <CardFooter/>
+        </div>
+        )
+      }
+    </div>      
   );
 }
 

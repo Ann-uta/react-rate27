@@ -1,0 +1,38 @@
+.item__rate {
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.item__rate_300 {
+    background-color: #2cc1d5;
+}
+
+.item__rate_450 {
+    background-color: #24ae8d;
+}
+
+.item__rate_550 {
+    background-color: #f46a5f;
+}
+
+.item__rate_1000 {
+    background-color: #303841;
+}
+
+.rub {
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+.month {
+    align-self: flex-end;
+}
+
+.rate {
+    font-size: 4rem;
+    line-height: 100%;
+    margin: 0;
+}
