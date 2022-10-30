@@ -1,21 +1,21 @@
 import './App.css';
+import React, { useState } from 'react';
 import rateData from './rateData';
-import CardFooter from './Components/CardFooter/CardFooter';
-import CardHeader from './Components/CardHeader/CardHeader';
-import Rate from './Components/Rate/Rate';
-import Speed from './Components/Speed/Speed';
+import Card from './Components/Card/Card';
 
 function App() {
+  const [isSelected, setSelected] = useState(false);
+ 
   return (
     <div className="App">         
       {
-        rateData.map ((item) =>
-        <div className = {`item item__${item.rate}`} key = {item.rate}>        
-          <CardHeader rate = {item.rate}/>
-          <Rate rate = {item.rate}/>
-          <Speed speed = {item.speed}/>
-          <CardFooter/>
-        </div>
+        rateData.map ((item) =>                        
+            <Card key = {item.rate}
+            rate = {item.rate}
+            speed = {item.speed}
+            isSelected={isSelected === item.rate}
+            onDivClick={setSelected}            
+            />         
         )
       }
     </div>      

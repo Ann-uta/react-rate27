@@ -9,17 +9,18 @@
 .item {
   width: 25%;
   border: 1px solid white;
+  transition: 1s ease-in-out;
 }
 
-/*.item:hover {
+.selected {
   transform: scale(110%);
   transition: 1s ease-in-out;
   align-self: center;
   box-shadow: -10px 10px 21px -9px rgba(0, 0, 0, 0.75);
-}*/
+}
 
-.item__550 {
+/*.item__550 {
   zoom: 110%;
   align-self: center;
   box-shadow: -10px 10px 21px -9px rgba(0, 0, 0, 0.75);
-}
+}*/
